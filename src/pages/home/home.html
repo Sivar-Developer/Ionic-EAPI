@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h2>Shopbox App</h2>
+  <button ion-button (click)="onGetProducts()">Get Products</button>
+  <p>List of Products</p>
+  <ion-list>
+    <button ion-item *ngFor="let product of products">
+      {{ product.name }}
+    </button>
+  </ion-list>
+</ion-content>
